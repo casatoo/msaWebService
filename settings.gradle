@@ -1,0 +1,5 @@
+rootProject.name = 'msaWebService'
+
+include 'eureka-server'
+include 'springCloudGateway'
+include 'webapp'
