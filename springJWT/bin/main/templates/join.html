@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>회원가입</h2>
+    <form action="/join" method="post" name="joinForm">
+      <input id="username" type="text" name="username" placeholder="사용자명"/>
+      <input id="password" type="password" name="password" placeholder="비밀번호"/>
+      <input type="submit" value="회원가입"/>
+      <button type="button" onclick="location.href='/login/page'">로그인 화면으로 돌아가기</button>
+    </form>
+  </div>
+  <img src="/static/img/join.png" class="loginImg">
+</body>
+</html>

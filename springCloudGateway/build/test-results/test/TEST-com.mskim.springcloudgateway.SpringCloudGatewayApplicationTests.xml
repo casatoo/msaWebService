@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mskim.springcloudgateway.SpringCloudGatewayApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-05T18:51:14" hostname="DESKTOP-KJDMK88" time="0.703">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.mskim.springcloudgateway.SpringCloudGatewayApplicationTests" time="0.703"/>
+  <system-out><![CDATA[03:51:10.042 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mskim.springcloudgateway.SpringCloudGatewayApplicationTests]: SpringCloudGatewayApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+03:51:10.128 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mskim.springcloudgateway.SpringCloudGatewayApplication for test class com.mskim.springcloudgateway.SpringCloudGatewayApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-06T03:51:10.631+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] c.m.s.SpringCloudGatewayApplicationTests : Starting SpringCloudGatewayApplicationTests using Java 17.0.10 with PID 24328 (started by 김민식 in C:\Users\김민식\Desktop\work\msa-core\springCloudGateway)
+2024-05-06T03:51:10.632+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] c.m.s.SpringCloudGatewayApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-06T03:51:11.659+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=016b57cd-2a88-361f-b826-b0e124dabe82
+2024-05-06T03:51:11.752+09:00  WARN 24328 --- [springCloudGateway] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-06T03:51:11.754+09:00  WARN 24328 --- [springCloudGateway] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-06T03:51:11.755+09:00  WARN 24328 --- [springCloudGateway] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-06T03:51:11.756+09:00  WARN 24328 --- [springCloudGateway] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-06T03:51:11.757+09:00  WARN 24328 --- [springCloudGateway] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-06T03:51:12.704+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2024-05-06T03:51:12.705+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2024-05-06T03:51:12.706+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2024-05-06T03:51:12.706+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2024-05-06T03:51:12.706+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2024-05-06T03:51:12.706+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-05-06T03:51:12.706+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2024-05-06T03:51:12.706+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-05-06T03:51:12.845+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-06T03:51:13.209+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-05-06T03:51:13.344+09:00  WARN 24328 --- [springCloudGateway] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-05-06T03:51:13.395+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-05-06T03:51:13.471+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-05-06T03:51:13.478+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-05-06T03:51:13.504+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-05-06T03:51:13.962+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-05-06T03:51:13.964+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-05-06T03:51:13.966+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-05-06T03:51:13.970+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714935073969 with initial instances count: 2
+2024-05-06T03:51:13.971+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGCLOUDGATEWAY with eureka with status UP
+2024-05-06T03:51:13.971+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714935073971, current=UP, previous=STARTING]
+2024-05-06T03:51:13.973+09:00  INFO 24328 --- [springCloudGateway] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGCLOUDGATEWAY/DESKTOP-KJDMK88:springCloudGateway:8080: registering service...
+2024-05-06T03:51:14.029+09:00  INFO 24328 --- [springCloudGateway] [    Test worker] c.m.s.SpringCloudGatewayApplicationTests : Started SpringCloudGatewayApplicationTests in 3.758 seconds (process running for 4.821)
+2024-05-06T03:51:14.068+09:00  INFO 24328 --- [springCloudGateway] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGCLOUDGATEWAY/DESKTOP-KJDMK88:springCloudGateway:8080 - registration status: 204
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

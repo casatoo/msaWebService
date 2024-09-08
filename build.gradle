@@ -7,7 +7,7 @@ plugins {
 dependencies {
     implementation project('eureka-server')
     implementation project('springCloudGateway')
-    implementation project('webapp')
+    implementation project('springJWT')
 }
 
 repositories {

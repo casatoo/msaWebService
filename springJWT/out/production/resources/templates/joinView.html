@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/default}">
+<head>
+    <title>Join Page</title>
+    <!-- 페이지의 개별적인 css -->
+    <th:block layout:fragment="css">
+        <link rel="stylesheet" href="css/login-style.css" />
+    </th:block>
+</head>
+<div layout:fragment="content">
+    <div class="login-container">
+        <h2>회원가입</h2>
+        <form action="/joinProc" method="post" name="loginForm">
+            <input id="username" type="text" name="username" placeholder="사용자명"/>
+            <input id="password" type="password" name="password" placeholder="비밀번호"/>
+            <input type="submit" value="회원가입"/>
+        </form>
+        <button type="button" onclick="location.href='/login'">로그인 페이지로 돌아가기</button>
+    </div>
+</div>
+</html>

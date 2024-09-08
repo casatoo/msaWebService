@@ -8,9 +8,13 @@
         <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-8.7-bin (1)/gradle-8.7" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/springCloudGateway" />
+            <option value="$PROJECT_DIR$/springJWT" />
           </set>
         </option>
       </GradleProjectSettings>

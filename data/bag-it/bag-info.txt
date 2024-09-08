@@ -1,0 +1,7 @@
+Source-Organization: 소스-기관
+Organization-Address: 기관-주소
+Contact-Name: 생산자
+Contact-Phone: 연락처
+Contact-Email: 이메일
+Payload-Oxum: 59.1
+Bagging-Date: 2024-09-01

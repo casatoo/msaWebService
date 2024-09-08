@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- [head] 영역 시작 -->
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">SIMPLE_MSA</title>
+    <!-- jQuery CDN 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- [JavaScript 파일 추가] -->
+    <script src="/js/header.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/ajaxUtils.js"></script>
+</head>
+<!-- [head] 영역 끝 -->
+
+<body>
+
+<!-- [header] 영역 시작 -->
+<header th:replace="~{fragments/header :: headerFragment}"></header>
+<!-- [header] 영역 끝 -->
+
+<!-- [content] 영역 시작 -->
+<section class="home-section">
+    <nav>
+        <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search' ></i>
+        </div>
+        <div class="profile-details">
+            <!--<img src="images/profile.jpg" alt="">-->
+            <span class="admin_name">Prem Shahi</span>
+            <i class='bx bx-chevron-down' ></i>
+        </div>
+    </nav>
+    <div layout:fragment="content"></div>
+</section>
+<!-- [content] 영역 끝 -->
+
+<!-- [footer] 영역 시작 -->
+<footer th:replace="~{fragments/footer :: footerFragment}"></footer>
+<!-- [footer] 영역 끝 -->
+
+</body>
+</html>

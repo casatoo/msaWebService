@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: springCloudGateway
+  cloud:
+    gateway:
+      routes:
+        - id: ms1
+          uri: lb://MS1
+          predicates:
+            - Path=/ms1/**
+          filters:
+            - name: L1Filter
+              args:
+                pre: true
+                post: true
+        - id: ms2
+          uri: lb://MS2
+          predicates:
+            - Path=/ms2/**
+        - id: ms3
+          uri: lb://MS3
+          predicates:
+            - Path=/ms3/**
+        - id: ms4
+          uri: lb://MS4
+          predicates:
+            - Path=/ms4/**
+        - id: security
+          uri: lb://SECURITY
+          predicates:
+            - Path=/security/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:1234@localhost:8761/eureka
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+  endpoint:
+    gateway:
+      enabled: true

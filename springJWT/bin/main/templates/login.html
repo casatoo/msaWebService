@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>로그인</h2>
+        <form action="/login" method="post" name="loginForm">
+            <input id="username" type="text" name="username" placeholder="사용자명"/>
+            <input id="password" type="password" name="password" placeholder="비밀번호"/>
+            <input type="submit" value="로그인"/>
+        </form>
+        <button type="button" onclick="location.href='/join/page'">회원가입</button>
+    </div>
+    <img src="/static/img/login.jpg" class="loginImg">
+</body>
+</html>

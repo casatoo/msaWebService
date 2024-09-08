@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mskim.springjwt.SpringJwtApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-05T18:51:22" hostname="DESKTOP-KJDMK88" time="0.426">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.mskim.springjwt.SpringJwtApplicationTests" time="0.426"/>
+  <system-out><![CDATA[03:51:17.720 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mskim.springjwt.SpringJwtApplicationTests]: SpringJwtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+03:51:17.808 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mskim.springjwt.SpringJwtApplication for test class com.mskim.springjwt.SpringJwtApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-06T03:51:18.330+09:00  INFO 28580 --- [springJWT] [    Test worker] c.m.springjwt.SpringJwtApplicationTests  : Starting SpringJwtApplicationTests using Java 17.0.10 with PID 28580 (started by 김민식 in C:\Users\김민식\Desktop\work\msa-core\springJWT)
+2024-05-06T03:51:18.331+09:00  INFO 28580 --- [springJWT] [    Test worker] c.m.springjwt.SpringJwtApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-05-06T03:51:19.024+09:00  INFO 28580 --- [springJWT] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-06T03:51:19.174+09:00  INFO 28580 --- [springJWT] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 1 JPA repository interface.
+2024-05-06T03:51:19.406+09:00  INFO 28580 --- [springJWT] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b868d25f-c571-3f87-8957-d004f1965773
+2024-05-06T03:51:19.547+09:00  WARN 28580 --- [springJWT] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-06T03:51:19.549+09:00  WARN 28580 --- [springJWT] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-06T03:51:19.696+09:00  INFO 28580 --- [springJWT] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-06T03:51:19.778+09:00  INFO 28580 --- [springJWT] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-06T03:51:19.823+09:00  INFO 28580 --- [springJWT] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-06T03:51:20.102+09:00  INFO 28580 --- [springJWT] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-06T03:51:20.133+09:00  INFO 28580 --- [springJWT] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-06T03:51:20.137+09:00  WARN 28580 --- [springJWT] [    Test worker] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-05-06T03:51:20.271+09:00  INFO 28580 --- [springJWT] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cacb445
+2024-05-06T03:51:20.273+09:00  INFO 28580 --- [springJWT] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-06T03:51:20.321+09:00  WARN 28580 --- [springJWT] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-05-06T03:51:21.088+09:00  INFO 28580 --- [springJWT] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-06T03:51:21.091+09:00  INFO 28580 --- [springJWT] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-06T03:51:21.410+09:00  WARN 28580 --- [springJWT] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-06T03:51:21.795+09:00  INFO 28580 --- [springJWT] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@298cfe89, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@189fb01b, org.springframework.security.web.context.SecurityContextHolderFilter@4bb4cc8c, org.springframework.security.web.header.HeaderWriterFilter@70736b19, org.springframework.web.filter.CorsFilter@49522bdf, org.springframework.security.web.authentication.logout.LogoutFilter@285b63eb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@665c79a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70e07ef8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@771b2b5b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77587422, org.springframework.security.web.session.SessionManagementFilter@7a553110, org.springframework.security.web.access.ExceptionTranslationFilter@534c3b9d, org.springframework.security.web.access.intercept.AuthorizationFilter@257e8c43]
+2024-05-06T03:51:22.344+09:00  INFO 28580 --- [springJWT] [    Test worker] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-05-06T03:51:22.378+09:00  WARN 28580 --- [springJWT] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-05-06T03:51:22.397+09:00  INFO 28580 --- [springJWT] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-05-06T03:51:22.490+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-05-06T03:51:22.496+09:00  INFO 28580 --- [springJWT] [    Test worker] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-05-06T03:51:22.524+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-05-06T03:51:22.904+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-05-06T03:51:22.907+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-05-06T03:51:22.909+09:00  INFO 28580 --- [springJWT] [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-05-06T03:51:22.912+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714935082912 with initial instances count: 2
+2024-05-06T03:51:22.914+09:00  INFO 28580 --- [springJWT] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGJWT with eureka with status UP
+2024-05-06T03:51:22.914+09:00  INFO 28580 --- [springJWT] [    Test worker] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1714935082914, current=UP, previous=STARTING]
+2024-05-06T03:51:22.918+09:00  INFO 28580 --- [springJWT] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGJWT/DESKTOP-KJDMK88:springJWT:8088: registering service...
+2024-05-06T03:51:22.924+09:00  INFO 28580 --- [springJWT] [    Test worker] c.m.springjwt.SpringJwtApplicationTests  : Started SpringJwtApplicationTests in 4.954 seconds (process running for 6.049)
+2024-05-06T03:51:23.020+09:00  INFO 28580 --- [springJWT] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGJWT/DESKTOP-KJDMK88:springJWT:8088 - registration status: 204
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>

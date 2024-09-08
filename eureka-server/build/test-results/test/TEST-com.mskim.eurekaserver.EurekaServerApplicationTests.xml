@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mskim.eurekaserver.EurekaServerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-05T18:50:51" hostname="DESKTOP-KJDMK88" time="0.785">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.mskim.eurekaserver.EurekaServerApplicationTests" time="0.785"/>
+  <system-out><![CDATA[03:50:47.348 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mskim.eurekaserver.EurekaServerApplicationTests]: EurekaServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+03:50:47.438 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mskim.eurekaserver.EurekaServerApplication for test class com.mskim.eurekaserver.EurekaServerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-06T03:50:47.964+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.m.e.EurekaServerApplicationTests       : Starting EurekaServerApplicationTests using Java 17.0.10 with PID 27408 (started by 김민식 in C:\Users\김민식\Desktop\work\msa-core\eureka-server)
+2024-05-06T03:50:47.965+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.m.e.EurekaServerApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-05-06T03:50:48.917+09:00  INFO 27408 --- [eureka-server] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59406ba0-62a1-3778-8555-d729fd5a9c4d
+2024-05-06T03:50:48.994+09:00  WARN 27408 --- [eureka-server] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-05-06T03:50:48.999+09:00  WARN 27408 --- [eureka-server] [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-05-06T03:50:49.724+09:00  INFO 27408 --- [eureka-server] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-06T03:50:49.781+09:00  INFO 27408 --- [eureka-server] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58f7215c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55638165, org.springframework.security.web.context.SecurityContextHolderFilter@3b3546a3, org.springframework.security.web.header.HeaderWriterFilter@6c5ae8fd, org.springframework.web.filter.CorsFilter@4fa91d5b, org.springframework.security.web.authentication.logout.LogoutFilter@75d97e18, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@45c90a05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d235635, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cc7e3ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ce30c0b, org.springframework.security.web.access.ExceptionTranslationFilter@46e388ec, org.springframework.security.web.access.intercept.AuthorizationFilter@31d4b3e8]
+2024-05-06T03:50:50.458+09:00  WARN 27408 --- [eureka-server] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-05-06T03:50:50.640+09:00  INFO 27408 --- [eureka-server] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-05-06T03:50:50.669+09:00  INFO 27408 --- [eureka-server] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-05-06T03:50:50.670+09:00  INFO 27408 --- [eureka-server] [    Test worker] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2024-05-06T03:50:50.679+09:00  INFO 27408 --- [eureka-server] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1714935050678 with initial instances count: 0
+2024-05-06T03:50:50.714+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2024-05-06T03:50:50.716+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2024-05-06T03:50:50.822+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-05-06T03:50:50.822+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-05-06T03:50:50.822+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-05-06T03:50:50.822+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-05-06T03:50:50.918+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2024-05-06T03:50:50.924+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2024-05-06T03:50:50.924+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2024-05-06T03:50:51.023+09:00  INFO 27408 --- [eureka-server] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2024-05-06T03:50:51.037+09:00  INFO 27408 --- [eureka-server] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2024-05-06T03:50:51.037+09:00  INFO 27408 --- [eureka-server] [    Test worker] c.m.e.EurekaServerApplicationTests       : Started EurekaServerApplicationTests in 3.437 seconds (process running for 4.651)
+2024-05-06T03:50:51.038+09:00  INFO 27408 --- [eureka-server] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2024-05-06T03:50:51.038+09:00  INFO 27408 --- [eureka-server] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2024-05-06T03:50:51.038+09:00  INFO 27408 --- [eureka-server] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2024-05-06T03:50:51.038+09:00  INFO 27408 --- [eureka-server] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2024-05-06T03:50:51.047+09:00  INFO 27408 --- [eureka-server] [      Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
